@@ -1,4 +1,4 @@
-// Терминал 24x80 поверх изображения монитора (Windows, Win32 + GDI + GDI+).
+com// Терминал 24x80 поверх изображения монитора (Windows, Win32 + GDI + GDI+).
 // Внешних библиотек не нужно: всё входит в Windows.
 //
 // ВСЕ РЕСУРСЫ ВСТРОЕНЫ В EXE (см. resource.rc, исходные файлы лежат в папке Files\ проекта):
@@ -1033,7 +1033,7 @@ int WINAPI wWinMain(_In_ HINSTANCE hInst, _In_opt_ HINSTANCE, _In_ LPWSTR, _In_ 
         RECT r = { 0, 0, (LONG)(iw * k), (LONG)(ih * k) };
         AdjustWindowRect(&r, WS_OVERLAPPEDWINDOW, FALSE);
 
-        HWND hwnd = CreateWindowExW(0, kClassName, L"PDP-11 Terminal",
+        HWND hwnd = CreateWindowExW(0, kClassName, L"PDP-11 Terminal: StarTrek",
                                     WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
                                     r.right - r.left, r.bottom - r.top,
                                     nullptr, nullptr, hInst, nullptr);
