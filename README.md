@@ -65,6 +65,10 @@ StarTrek/
 - Игра компилируется как C, окно — как C++; точка входа игры переименована в `startrek_main`.
 - Ресурсы (`MONITOR_PNG`, `START_WAV`, `LOOP_WAV`, `KLIC_WAV`, `STARTREK_MD`, иконка `1`) загружаются из exe; щелчок играется через пул `waveOut`, чтобы не прерывать фоновый цикл.
 
+## Окно приложения
+
+![Окно приложения](docs/term.png)
+
 ## Авторство и лицензия
 
 - Оригинал: Super Star Trek, Mike Mayfield (1971), Bob Leedom (1974), Dave Ahl (*BASIC Computer Games*, 1978).
