@@ -1,0 +1,14 @@
+// Файл ресурсов: встраивает в exe иконку, изображение, звуки и справку при сборке.
+// Пути указываются относительно папки, где лежит этот файл (папка проекта).
+// Обратные слэши в путях удваиваются.
+
+// Иконка с наименьшим ID (1) становится значком самого exe в проводнике
+1           ICON   "Files\\app.ico"
+
+MONITOR_PNG RCDATA "Files\\monitor.png"
+START_WAV   RCDATA "Files\\start_1db.wav"
+LOOP_WAV    RCDATA "Files\\loop_1db.wav"
+KLIC_WAV    RCDATA "Files\\klic.wav"
+
+// Справка к игре (Markdown, UTF-8), открывается по F1
+STARTREK_MD RCDATA "Files\\startrek_ru.md"
